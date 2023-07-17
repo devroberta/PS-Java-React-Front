@@ -1,0 +1,52 @@
+{
+    "listaTranferencias": [
+        {
+            "id": "1",
+            "data_transferencia": "2019-01-01",
+            "valor": "30895.46",
+            "tipo": "DEPOSITO",
+            "nome_operador_transacao": null,
+            "conta_id": "1"
+        },
+        {
+            "id": "2",
+            "data_transferencia": "2019-02-03",
+            "valor": "12.24",
+            "tipo": "DEPOSITO",
+            "nome_operador_transacao": null,
+            "conta_id": "2"
+        },
+        {
+            "id": "3",
+            "data_transferencia": "2019-05-04",
+            "valor": "-500.50",
+            "tipo": "SAQUE",
+            "nome_operador_transacao": null,
+            "conta_id": "1"
+        },
+        {
+            "id": "4",
+            "data_transferencia": "2019-08-07",
+            "valor": "-530.50",
+            "tipo": "SAQUE",
+            "nome_operador_transacao": null,
+            "conta_id": "2"
+        },
+        {
+            "id": "5",
+            "data_transferencia": "2020-06-08",
+            "valor": "3241.23",
+            "tipo": "TRANSFERENCIA",
+            "nome_operador_transacao": "Beltrano",
+            "conta_id": "1"
+        },
+        {
+            "id": "6",
+            "data_transferencia": "2021-04-01",
+            "valor": "25173.09",
+            "tipo": "TRANSFERENCIA",
+            "nome_operador_transacao": "Ronnyscley",
+            "conta_id": "2"
+        }
+    ]
+}

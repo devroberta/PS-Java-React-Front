@@ -1,0 +1,36 @@
+table {
+    border: 2px solid rgb(85, 84, 84);
+    background-color: white;
+}
+
+.table-colum-item td {
+    padding: 2px;
+    border-left: 1px solid gray;
+    padding: 5px;
+}
+
+.form-filtro {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-filtro input {
+    display: block;
+    border: 1px solid #222;
+    border-radius: 4px;
+    background-color: white;
+    padding: .5em;
+}
+
+.table-lista {
+    text-align: center;
+}
+
+.table-line-saldo {
+    margin-right: .5em;
+}
+
+.table-line-titulo {
+    font-weight: bold;
+    background-color: rgb(240, 235, 233);
+}
