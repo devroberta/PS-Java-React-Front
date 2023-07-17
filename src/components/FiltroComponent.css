@@ -3,15 +3,44 @@ table {
     background-color: white;
 }
 
-.table-colum-item td {
+section {
     padding: 2px;
-    border-left: 1px solid gray;
-    padding: 5px;
+}
+
+input {
+    width: 100%;
+}
+
+.div-principal {
+    justify-content: center;
 }
 
 .form-filtro {
     display: flex;
-    flex-direction: column;
+    padding: 10px;
+}
+
+
+.button-pesquisar {
+    justify-content: right;
+}
+
+#pesquisar {
+    background-color: #f0b548;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-left: 85%;
+}
+
+.table-colum-item td {
+    padding: 2px;
+    padding: 5px;
+}
+
+.section-label-input {
+    padding: 2px;
+    margin: 15px 15px;
 }
 
 .form-filtro input {
@@ -33,4 +62,8 @@ table {
 .table-line-titulo {
     font-weight: bold;
     background-color: rgb(240, 235, 233);
+}
+
+.table-navegacao {
+    text-align: center;
 }

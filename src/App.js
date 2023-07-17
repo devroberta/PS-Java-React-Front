@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <FiltroComponent />
+      <main><FiltroComponent /></main>
     </div>
   );
 }

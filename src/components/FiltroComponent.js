@@ -1,3 +1,4 @@
+import { NgxMaskDirective } from 'ngx-mask';
 import './FiltroComponent.css'
 import { useState, useEffect } from "react";
 
@@ -32,48 +33,48 @@ const FiltroComponent = () => {
 
     }, [])
 
-    return <div>
-        <form onSubmit={handleSubmit}>
-            <div className="form-filtro">
-                <span>
-                    <label htmlFor='dataInicial'>Data de inicio</label>
-                    <input
-                        type="text"
-                        name="dataInicial"
-                        placeholder="Data Inicial"
-                        value={dataInicial || ""}
-                        onChange={(e) => setDataInicial(e.target.value) }
-                        required
-                    ></input>
-                </span>
-                <span>
-                    <label htmlFor='dataFinal'>Data de fim</label>
-                    <input
-                        type="text"
-                        name="dataFinal"
-                        placeholder="Data dataFinal"
-                        value={dataFinal || ""}
-                        onChange={(e) => setDataFinal(e.target.value) }
-                        required
-                    ></input>
-                </span>
-                <span>
-                    <label htmlFor='nomeOperador'>Nome do operador transacionado</label>
-                    <input
-                        type="text"
-                        name="nomeOperador"
-                        placeholder="Nome Operador Transferencia"
-                        value={nomeOperador || ""}
-                        onChange={(e) => setNomeOperador(e.target.value) }
-                        required
-                    ></input>
-                </span>
-                <span>
-                    <button>Pesquisar</button>
-                </span>
-            </div>
+    return <div className='div-principal'>
+        <form className='form-filtro' onSubmit={handleSubmit}>
+            <section className='section-label-input'>
+                <label className='label-input' htmlFor='dataInicial'>Data de inicio</label>
+                <input
+                    type="text"
+                    name="dataInicial"
+                    placeholder="Data Inicial"
+                    value={dataInicial || ""}
+                    onChange={(e) => setDataInicial(e.target.value) }
+                    required
+                ></input>
+            </section>
+            <section className='section-label-input'>
+                <label className='label-input' htmlFor='dataFinal'>Data de fim</label>
+                <input
+                    type="text"
+                    name="dataFinal"
+                    placeholder="Data dataFinal"
+                    value={dataFinal || ""}
+                    onChange={(e) => setDataFinal(e.target.value) }
+                    required
+                ></input>
+            </section>
+            <section className='section-label-input'>
+                <label className='label-input' htmlFor='nomeOperador'>Nome do operador transacionado</label>
+                <input
+                    type="text"
+                    name="nomeOperador"
+                    placeholder="Nome Operador Transferencia"
+                    value={nomeOperador || ""}
+                    onChange={(e) => setNomeOperador(e.target.value) }
+                    required
+                ></input>
+            </section>
         </form>
 
+        <section className='button-pesquisar'>
+            <button id='pesquisar'>Pesquisar</button>
+        </section>
+
+        <section>
         <table className="table-lista">
 
             <thead>
@@ -99,14 +100,13 @@ const FiltroComponent = () => {
                     </tr>
                 ))}
             </tbody>
-
-            <tfoot>
-                <tr>
-                    <td className="table-navegacao">1 2 3</td>
-                </tr>
-            </tfoot>
-
         </table>
+        </section>
+        <section>
+            <tfoot>             
+                <td className="table-navegacao">1 2 3</td>
+            </tfoot>
+        </section>
     </div>;
 }
 
