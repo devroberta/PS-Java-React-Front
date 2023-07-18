@@ -7,6 +7,7 @@ section {
     padding: 2px;
 }
 
+
 input {
     width: 100%;
 }
@@ -64,6 +65,7 @@ input {
     background-color: rgb(240, 235, 233);
 }
 
-.table-navegacao {
+.section-navegacao {
     text-align: center;
+    margin: 25px;
 }

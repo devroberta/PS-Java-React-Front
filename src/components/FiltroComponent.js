@@ -38,7 +38,7 @@ const FiltroComponent = () => {
             <section className='section-label-input'>
                 <label className='label-input' htmlFor='dataInicial'>Data de inicio</label>
                 <input
-                    type="text"
+                    type="date"
                     name="dataInicial"
                     placeholder="Data Inicial"
                     value={dataInicial || ""}
@@ -49,7 +49,7 @@ const FiltroComponent = () => {
             <section className='section-label-input'>
                 <label className='label-input' htmlFor='dataFinal'>Data de fim</label>
                 <input
-                    type="text"
+                    type="date"
                     name="dataFinal"
                     placeholder="Data dataFinal"
                     value={dataFinal || ""}
@@ -94,7 +94,7 @@ const FiltroComponent = () => {
                 {listaTransf.map((item) => (
                     <tr className="table-colum-item" key={item.id}>
                         <td>{item.data_transferencia}</td>
-                        <td>{item.valor}</td>
+                        <td>R$ {item.valor}</td>
                         <td>{item.tipo}</td>
                         <td>{item.nome_operador_transacao}</td>
                     </tr>
@@ -102,11 +102,7 @@ const FiltroComponent = () => {
             </tbody>
         </table>
         </section>
-        <section>
-            <tfoot>             
-                <td className="table-navegacao">1 2 3</td>
-            </tfoot>
-        </section>
+        <section className="section-navegacao">1  2  3</section>
     </div>;
 }
 
